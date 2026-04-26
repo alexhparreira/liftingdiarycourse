@@ -1,5 +1,6 @@
 import { auth } from "@clerk/nextjs/server";
 import { format } from "date-fns";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { getWorkoutsForDate } from "@/data/workouts";
@@ -44,7 +45,9 @@ export default async function DashboardPage({ searchParams }: Props) {
               <p className="text-sm text-muted-foreground">
                 No workouts logged for this date.
               </p>
-              <Button>Log New Workout</Button>
+              <Button asChild>
+                <Link href="/dashboard/workout/new">Log New Workout</Link>
+              </Button>
             </div>
             
           ) : (

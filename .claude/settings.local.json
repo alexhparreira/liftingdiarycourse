@@ -12,7 +12,10 @@
       "Bash(npx shadcn@latest add calendar popover card --yes)",
       "Bash(node -e \"require\\('date-fns'\\); console.log\\('ok'\\)\")",
       "Bash(git push *)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(npx shadcn@latest add input)",
+      "Bash(npx shadcn@latest add label)",
+      "Bash(npx tsc *)"
     ]
   },
   "enableAllProjectMcpServers": true,

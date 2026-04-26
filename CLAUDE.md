@@ -30,6 +30,8 @@ No test framework is configured.
 ## Code generation Guidelines
 - /docs/ui.md
 - /docs/data-fetching.md
+- /docs/auth.md
+- /docs/data-mutations.md
 
 ## Architecture
 
