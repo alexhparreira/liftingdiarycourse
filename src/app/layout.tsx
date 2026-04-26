@@ -30,10 +30,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ClerkProvider>
-          <header>
+          <header className="flex justify-end items-center px-6 pt-4">
             <Show when="signed-out">
-              <SignInButton mode="modal" />
-              <SignUpButton mode="modal" />
+              <div className="flex gap-3">
+                <SignInButton mode="modal" />
+                <SignUpButton mode="modal" />
+              </div>
             </Show>
             <Show when="signed-in">
               <UserButton />

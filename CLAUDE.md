@@ -4,6 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+## Docs-First Rule
+
+**Before generating any code, always consult the relevant file(s) in the `/docs` directory.** Every coding standard, convention, and constraint for this project is documented there. Generated code must comply with those standards — no exceptions.
+
 ## Commands
 
 ```bash
@@ -23,6 +27,10 @@ No test framework is configured.
 - **Tailwind CSS v4** — uses `@import "tailwindcss"` syntax (not `@tailwind` directives)
 - **ESLint 9** flat config (`eslint.config.mjs`)
 
+## Code generation Guidelines
+- /docs/ui.md
+- /docs/data-fetching.md
+
 ## Architecture
 
 All source lives under `src/app/` using the Next.js App Router convention:
@@ -32,6 +40,7 @@ All source lives under `src/app/` using the Next.js App Router convention:
 - `globals.css` — Tailwind v4 import + CSS custom properties for theme colors and font variables
 
 Routing follows file-system conventions: new routes go in `src/app/<route>/page.tsx`. Shared UI components should live in `src/components/` (not yet created).
+
 
 ## Tailwind v4 Notes
 
