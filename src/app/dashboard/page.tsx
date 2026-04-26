@@ -46,6 +46,7 @@ export default async function DashboardPage({ searchParams }: Props) {
               </p>
               <Button>Log New Workout</Button>
             </div>
+            
           ) : (
             <ul className="space-y-4">
               {workoutsForDate.map((workout) => (
